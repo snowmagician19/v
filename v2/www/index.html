@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	
+	
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/MauveBamboo145.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" data-theme="a">
+	
+	
+	
+	<div class=deviceinfoclass> Device Info Class </div>
+	
+	<button id=playsound> EarthQuake! </button>
+	
+	Charlotte, Nakoruru
+	
+	</div>
+	
+	
+	<div class="app" style="display:none;">
+		<h1>Apache Cordova</h1>
+		<div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+	<script>
+	
+	
+alert("Ninja1");
+
+document.addEventListener( "deviceready", onDeviceReady, false );
+
+alert("Ninja2");
+
+function onDeviceReady( )  // Things here will load only after device is ready
+{
+	alert("Ninja3");
+	
+	
+	var deviceinfo = 	"<p>"+	device.cordova +
+					"</p><p>"+	device.model	+
+					"</p><p>"+device.platform +
+					"</p><p>"+device.uuid+
+					"</p><p>"+device.version;
+
+	$('.deviceinfoclass').html(deviceinfo);
+		
+	$('#playsound').click( function(e){  navigator.tts.startup(); navigator.tts.speak("The Game Starts"); } );
+	
+	alert("Ninja4");
+}
+	</script>
+
+	</body>
+
+</html>

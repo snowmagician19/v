@@ -1,0 +1,234 @@
+
+#elsstaff 
+{
+	text-align: center !important;
+}
+
+.staffscreengap
+{
+	height:1em;
+}
+
+.staffintrowords
+{
+	font-weight:bold;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+
+.membername
+{
+	font-weight:bold
+}
+
+/* button styles C6CFFF 9692EB*/
+
+#wordclick
+{
+	background-image: -webkit-gradient(
+											linear,
+											left top,
+											left bottom,
+											color-stop(0, #9692EB),
+											color-stop(1, #C6CFFF)   
+											);
+
+	background-image: -moz-linear-gradient(bottom, #9692EB 0%, #C6CFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #9692EB 0%, #C6CFFF 100%);
+	background-image: linear-gradient(to bottom, #9692EB 0%, #C6CFFF 100%);
+
+	padding:30px;
+	border-radius:5px;
+	margin:0px;
+}
+
+
+
+#oneword
+{
+	font-weight:bold
+}
+
+.wordclick
+{
+	text-align: center 
+}
+
+.screen3stats
+{
+	text-align: center !important;
+}
+
+#gamewelcomescreen
+{
+	text-align	: 	center !important;
+	padding	:	30px;
+	font-size	: 	2em;
+}
+
+
+#confirmdiv
+{
+	text-align	: 	center !important;
+	font-size: 2em !important;
+}
+
+
+.ui-icon-custom-erase
+{
+
+	background-image:url("./img/erase.png")}
+}
+
+#opponent
+{	
+	font-size		: 	2em;
+}
+
+
+#gameinputpanel
+{
+		text-align	: 	center !important;
+}
+
+.incorrectattemptclass, #incorrectmeaning
+{
+		text-align	: 	center !important;
+}	
+
+.testquitconfirm
+{
+	font-size: 1.5m;
+}
+
+.in, .out 
+{
+	-webkit-animation-timing-function: ease-out !important;
+	-webkit-animation-duration: 270ms !important;
+}
+
+#desiredpart
+{
+	border-radius: 0px !important;
+	height:5em !important;
+	border-color:#A6AEFF;
+	border-width:2px;
+}
+
+
+@font-face 
+{
+	font-family: "cantareg";
+	src: url("./fontfiles/Cantarell-Regular.ttf") format("opentype"); 
+}
+
+#page1div
+{
+	font-family: "cantareg" !important;
+}
+
+/* Working Example from S O Flow
+
+@font-face 
+{
+    font-family: "customfont";
+    src: url("./fonts/arial.ttf") format("opentype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` 
+    }
+	
+body 
+{
+        font-family: "customfont";
+        font-size:30px;
+}
+*/
+
+.entriesdisplayed
+{
+	font-size:2em
+}
+
+.pileentries
+{
+	font-size:2em
+}
+
+.DateDivider
+{
+	text-shadow: 1px 1px 0px #000000;
+	background: #94A8CC;
+	color:white;
+	padding:0.2em;
+	text-align: center;
+	font-size:1.5em !important;
+
+}
+
+.frequencyalpha
+{
+	color: #94A8CC;
+	/* font-style: bold oblique !important;  */
+}
+
+.page1navbar
+{
+	font-size:1em;
+}
+
+
+
+
+#topnavbar
+{
+	margin-bottom: 1em;
+}
+
+.screen3panels
+{
+    margin-left	: 	auto;
+    margin-right	: 	auto;
+}
+
+
+#chooselanguagefirst
+{
+    /*margin-left		: 	auto;
+    margin-right	: 	auto;
+	display			:	inline-block;*/
+}
+
+.rawforprogrammer
+{
+	text-align		: 	right !important;
+}
+
+.newlanguagechosen
+{
+    /* margin-left		: 	auto;	margin-right	: 	auto;			*/
+	/*display			:	inline-block;*/
+	margin-top		: 	1.5em;
+	margin-bottom	:	1.5em;
+	/* border-radius	:	2pm;*/
+}
+
+.sc1credits
+{
+	margin-top 		: 	6em;  /* yes it is reflected */
+	
+	text-align		: 	center !important;
+}
+
+#userstathorizontalbar
+{
+	text-align		: 	center !important;
+}
+.newlanguagechosendivtitle
+{
+	text-align		: 	center !important;
+	font-family		: 	"cantareg" !important;
+	margin-top		: 	3em;
+	margin-bottom	: 	3em;
+	font-size		: 	1.5em;
+	/* INEFFECTIVE margin-left		: 	auto; margin-right	: 	auto; */
+}

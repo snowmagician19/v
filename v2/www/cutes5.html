@@ -1,0 +1,140 @@
+﻿	<script src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/numbertranslate.js"> </script>	
+	
+	category <div id=category></div>
+	question <div id=question></div>
+	choice1 <div id=choiceid1></div>
+	choice1 <div id=choiceid1></div>
+	choice1 <div id=choiceid1></div>
+	choice1 <div id=choiceid1></div>
+	answer <div id=choiceid1></div>
+	<script>
+
+		var minimum = 10; // min will always be 10 at least each cycle increases random by 10
+		var maximum = minimum * 10;
+		var nativesoundonlytext = "dummy7";
+		var answerpool = []; var soundonlytext = "<p>Sound Only</p> </p>"+nativesoundonlytext+"</p>"; var questioncontent = "Q Text";
+		
+		/* The below chooses one from 123456 */
+		var categorymin = 1; var categorymax = categorymin + 4; // YES 
+				
+		
+		var categoryindex = Math.floor(Math.random() * (categorymax - categorymin + 1)) + categorymin;
+		
+		var randomcategory = "rn"+categoryindex; // YES
+
+		// var randomtranslated = numbertranslate(randomchosen);
+		var choice1gen = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum; // includes miinimum and maximum
+		
+		var choice2gen = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+		
+		var choice3gen = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+		
+		var varier = Math.floor(Math.random() * (9)) + 1;
+		
+		var choice4gen = choice3gen + varier;
+		
+		if(choice4gen > maximum ) choice4gen = choice3gen - varier; else choice4gen = choice3gen + varier;
+				
+		answerpool.push(choice1gen);
+		answerpool.push(choice2gen);
+		answerpool.push(choice3gen);
+		answerpool.push(choice4gen);
+		
+				
+		answerpool = shufflearray(answerpool);		
+		
+		var questionindex = Math.floor(Math.random() * (3)) + 1;
+		
+		var questionanswer = "m"+(questionindex+1);
+		
+		
+		
+	
+		if(categoryindex == 1) // SEVENTEEN 12 13 14 15
+		{
+			questioncontent = numbertranslate(answerpool[questionindex]);
+			
+			questioncontent = questioncontent.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+
+			newTAelement = new TAelement( randomcategory, questioncontent, questionanswer, answerpool[0], answerpool[1], answerpool[2], answerpool[3] ); 
+
+		}
+		else if(categoryindex == 2) // 15 TWO FIVE THREE NINE
+		{
+			questioncontent = answerpool[questionindex];
+			
+			index1 = numbertranslate(answerpool[0]); index2 = numbertranslate(answerpool[1]); index3 = numbertranslate(answerpool[2]); index4 = numbertranslate(answerpool[3]); 
+			
+			index1 = index1.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+			index2 = index2.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+			index3 = index3.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+			index4 = index4.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+			
+			newTAelement = new TAelement( randomcategory, questioncontent, questionanswer, index1,  index2,  index3,  index4 ); 
+
+		}	
+		
+		else if(categoryindex == 3) // Audio Only 12 13 14 15
+		{
+			questioncontent = soundonlytext;
+			
+			newTAelement = new TAelement( randomcategory, questioncontent, questionanswer, answerpool[0], answerpool[1], answerpool[2], answerpool[3] ); 
+		}
+		
+		else if(categoryindex == 4) // 4 Audio SEVENTEEN 12 13 14 15
+		{
+			questioncontent = numbertranslate(answerpool[questionindex]);
+			
+			questioncontent = questioncontent.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+
+			newTAelement = new TAelement( randomcategory, questioncontent, questionanswer, answerpool[0], answerpool[1], answerpool[2], answerpool[3] ); 
+		}
+		
+		else // Audio only TWO FIVE THREE NINE
+		{
+			questioncontent = numbertranslate(answerpool[questionindex]);
+			
+			index1 = numbertranslate(answerpool[0]); index2 = numbertranslate(answerpool[1]); index3 = numbertranslate(answerpool[2]); index4 = numbertranslate(answerpool[3]); 
+			
+			index1 = index1.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+			index2 = index2.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+			index3 = index3.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+			index4 = index4.toLowerCase().replace(/\b[a-z]/g, function(firstletter){ return firstletter.toUpperCase(); }	);
+			
+			newTAelement = new TAelement( randomcategory, questioncontent, questionanswer, answerpool[0], answerpool[1], answerpool[2], answerpool[3] ); 
+		}
+
+
+		
+alert(newTAelement.category +" + "+ newTAelement.question +"+"+ newTAelement.trueanswer +" + "+ newTAelement.c1  +" + "+ newTAelement.c2  +" + "+ newTAelement.c3  +" + "+ newTAelement.c4); 
+
+		
+
+		function TAelement(category, question, trueanswer, c1, c2, c3, c4)
+		{
+			this.category = category;
+			this.question = question;
+			this.trueanswer = trueanswer;
+			this.c1 = c1;
+			this.c2 = c2;
+			this.c3 = c3;
+			this.c4 = c4;
+		}
+
+		function shufflearray(array)
+		{
+			var currentIndex = array.length, temporaryValue, randomIndex ;
+
+			while (0 !== currentIndex) 
+			{
+				randomIndex = Math.floor(Math.random() * currentIndex);	currentIndex -= 1;
+		
+				temporaryValue = array[currentIndex];	array[currentIndex] = array[randomIndex];	array[randomIndex] = temporaryValue;
+			}
+	
+			return array;
+		}
+
+		
+	</script>

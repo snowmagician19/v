@@ -1,0 +1,33 @@
+﻿	<script src="js/jquery-2.1.3.min.js"></script>
+	
+	category <div id=category class=multichoicearrow > ARROW </div>
+	question <div id=question></div>
+	choice1 <div id=choiceid1></div>
+	choice1 <div id=choiceid1></div>
+	choice1 <div id=choiceid1></div>
+	choice1 <div id=choiceid1></div>
+	answer <div id=choiceid1></div>
+	<script>
+	//choicecolourset = [ "#33CC33" , "#0066FF", "#FF66FF", "#669999", "#0000FF", "#3399FF", "#336699", "#336699"];
+	
+
+	choicearrow = //[ "♠", "♥", "♦", "♣" ];
+
+	[ "♠", "♥", "♦", "♣", "♞", "♜", "♚", "♘", "♖", "♔", "♕", "♗", "♙", "♛", "♝", "♟", "☿", "♅", "♀", "♃", "♆", "♁", "♄",
+"♇", "♈", "♑", "♉", "♌", "♏", "♊", "♍", "♐", "♓", "☀", "☃", "☆", "☉", "☼", "☄", "☂", "★", "☈", "☾", "Ω", "☠", "☢", "☤", 
+"☡", "✍", "✌", "✓", "✎", "✐", "✆", "✈", "☑", "✍", "✏", "✂", "✄", "✇", "❦", "♥", "✦", "✩", "✫","✭", "✯", "✱","✳","✵","✷","✹","❁","❃",
+"❅","❇","❉","❋","✧","✪","✬","✮","✰","✲","✴","✶","✸","✺","✼","✾","❀","❂","❄","❆","❊","❖",">", "→", "_","&"];
+
+	choicecolourset = 
+
+[ "#33CC33" , "#0066FF", "#FF66FF", "#669999", "#0000FF", "#3399FF", "#336699", "#FFCC66","BC9AFF","#FF66CC","#9191B5","#B4B4FF",
+"#FF3399","#6699FF", "#0000CC","#CC99FF","#FF9933","#FFCC99","#FF00FF","#5C5CE6","#58588F","#9090B5","#A2A2E6","#BEBEEE"];
+
+	var chosenarrow = choicearrow[Math.floor(Math.random()*choicearrow.length)];	
+	
+	var chosencolour = choicecolourset[Math.floor(Math.random()*choicecolourset.length)];	
+	
+	$(".multichoicearrow").text(chosenarrow).css("color", chosencolour);
+
+	 
+	</script>

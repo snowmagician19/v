@@ -1,0 +1,338 @@
+.gobackbutton
+{
+	border-radius	:	10em !important;
+}
+
+.simplycentre
+{
+
+	text-align		: 	center !important;
+}
+
+.addmeaningpanelelements
+{
+	text-align		: 	center !important;
+	font-weight 	: bold;
+}
+
+.keyupdisplayed
+{
+	font-weight 	: normal !important;
+}
+
+#savedmessage
+{
+	text-align		: 	center !important;
+}
+.minheightclass
+{
+	min-height:2em;
+}
+
+.screen2inputpanelclass
+{
+	border-radius:0em;
+	border-width:1px;
+	border-color:E8E8E8;
+}
+
+.errorindicator
+{
+	font-weight:bold !important;
+}
+
+.helpelementitle
+{
+	font-weight:bold !important;
+	font-size	:1.5em !important;
+	margin:1em !important;
+}
+.questionstyle
+{
+	font-size:2em;
+	font-family: "adobesspregular" !important;
+	text-align		: 	center !important;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+.andyversiondisplayed
+{
+	font-size:3em;
+	text-align		: 	center !important;
+	font-weight	:bold !important;
+	font-family	:	"codeproregular" !important;
+}
+
+.specialstreak
+{
+	font-weight:bold !important;
+	font-style:italic;
+}
+
+#winningmessagedisplayed
+{
+	font-size:2em;
+	font-family: "adobesspregular" !important;
+	text-align		: 	center !important;
+	margin-bottom:0em!important;
+}
+
+#manualwronganswers
+{	
+	text-align		: 	center !important;
+}
+
+.submitbuttonfortextarea
+{
+	border-radius	:	20em !important;
+
+}
+
+#trulydeleteeverythingdiv  
+{
+	text-align		: 	center !important;
+
+}
+
+.screen1warning
+{
+	font-family	: "quicksand"!important;
+	font-size		:	2em;
+	margin-top		:	2em 	!important;
+	margin-bottom	:	2em 	!important;
+}
+
+
+.welcomeovermessage
+{
+	font-size:2em;
+	font-family: "adobesspregular" !important;
+	text-align		: 	center !important;
+}
+
+
+.welcomescreenelement
+{
+	margin-top		:	2em 	!important;
+	margin-bottom	:	2em 	!important;
+}
+
+.questionhousinggroup
+{
+	margin-left:1em;
+	margin-right:1em;
+	margin-bottom:2em;
+	margin-top:2em;
+}
+
+.page1navbar
+{
+
+	margin-left:0em !important;
+	margin-right:0em !important;
+	margin-bottom:0.5em !important;
+	margin-top:0.5em !important;
+}
+
+#trulydeleteeverythingdiv
+{
+	margin-bottom:2em !important;
+	margin-top:2em !important;
+}	
+	
+#newgamestart
+{
+	border-width:5px !important;
+	border-style: solid;
+	border-color:#8481FF;
+	border-radius:30em;
+}
+
+.multichoicearrow
+{
+	font-weight:bold !important;
+}
+
+.questioaudiobutton
+{
+	border-radius: 5em !important;
+}
+
+
+
+.additionalmessage
+{
+	font-size 		: 	1.3em;
+	text-align		: 	center !important;
+}
+
+#messageabovexo
+{
+	text-align		: 	center !important;
+	font-size 		: 	1.5em;
+}
+
+
+#question3housing, #question2housing
+{
+	/* color:#C7C6F2!important;CBC9DA */
+	
+	/* color:#DEDCEE!important;*/
+	 
+	color:#E2E0EE!important;
+}
+
+.disabledtextarea
+{
+	border-width:2px !important;
+	border-style: solid;
+	height:5em !important;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+.disabledaudiobutton
+{
+	border-width:2px !important;
+	border-style: solid;
+	border-radius:10em;
+	text-align		: 	center !important;
+		padding:1em;
+}
+
+.disabledsubmitbutton	
+{
+	border-width:2px !important;
+	border-style: solid;
+	text-align		: 	center !important;
+	padding:1em;
+}
+
+.incorrectlisting
+{
+	font-size 		: 	2em;
+	text-align		: 	center !important;
+}
+
+.incorrectviewrequest
+{
+	margin-top 	: 	3em;
+}
+
+
+#userstathorizontalbar
+{	
+	font-family	:	"codeproregular" !important;
+	text-align		: 	center !important;
+}
+
+@font-face 
+{
+	font-family: "codeproregular";
+	src: url("./fontfiles/SourceCodePro-Regular.otf") format("opentype"); 
+}
+
+@font-face 
+{
+	font-family: "sspsemibold";
+	src: url("./fontfiles/SourceSansPro-Semibold.otf") format("opentype"); 
+}
+
+.nextquestionpress
+{
+	text-align		: 	center !important;
+}
+
+.gamestarttrigger
+{
+	text-align		: 	center !important;
+	border-radius	: 	5em 	!important;
+}
+
+
+.multiplechoicecstyle
+{
+	font-size:1.5em;
+	font-family: "opensansregular" !important;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+.eachmultiplechoice
+{
+	margin:0.5em;
+	padding:0.5em;
+
+}
+
+#question1textarea
+{
+	border-radius: 0px !important;
+	height:5em !important;
+	border-color:#060035 !important;
+	border-width:2px !important;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+
+
+#thetestcontinues
+{
+	border-radius:30em;
+}
+
+.bigxoclass
+{
+	font-size		:	10em;
+	font-family	: 	"quicksand" !important;
+	text-align		: 	center !important;
+	margin-top		:	0em !important;
+}
+
+
+@font-face 
+{
+	font-family: "quicksand";
+	src: url("./fontfiles/Quicksand-Regular.otf") format("opentype"); 
+	
+}
+
+
+@font-face 
+{
+	font-family: "cantaregboldoblique";
+	src: url("./fontfiles/Cantarell-BoldOblique.ttf") format("opentype"); 
+}
+
+@font-face 
+{
+	font-family: "adobesspregular";
+	src: url("./fontfiles/SourceSansPro-Regular.otf" format("opentype"); 
+}
+	
+
+@font-face 
+{
+	font-family: "cantareg";
+	src: url("./fontfiles/Cantarell-Regular.ttf") format("opentype"); 
+}
+
+@font-face 
+{
+	font-family: "cantaregbold";
+	src: url("./fontfiles/Cantarell-Bold.ttf") format("opentype"); 
+}
+
+@font-face 
+{
+	font-family: "opensansregular";
+	src: url("./fontfiles/OpenSans-Regular.ttf") format("opentype"); 
+}
+
+@font-face 
+{
+	font-family: "quicksandbold";
+	src: url("./fontfiles/Quicksand-Bold.otf") format("opentype"); 
+	
+}

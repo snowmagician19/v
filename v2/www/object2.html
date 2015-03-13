@@ -1,0 +1,29 @@
+
+<div id="a"></div>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script>
+
+var testarray = [];
+
+var newTAelement = new TAelement( "rs5", "Thirteen", "13", "15", "14","11","99"); // the new keyword is important
+
+function TAelement(category, question, trueanswer, c1, c2, c3, c4 )
+{
+    this.category = category;
+    this.question = question;
+    this.trueanswer = trueanswer;
+    this.c1 = c1;
+    this.c2 = c2;
+    this.c3 = c3;
+    this.c4 = c4;
+}
+
+testarray.push(newTAelement);
+
+elementextracted = testarray[0];
+
+alert(elementextracted.category);
+
+// += is for string and numbers no such thing as =+ or => or =<
+
+</script>
